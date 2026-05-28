@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+"http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+
+<plist version="1.0">
+<array>
+
+<dict>
+    <key>title</key>
+    <string>iOS Development</string>
+
+    <key>image</key>
+    <string>swift</string>
+
+    <key>teacher</key>
+    <string>John Smith</string>
+
+    <key>description</key>
+    <string>Learn SwiftUI and iOS apps.</string>
+
+    <key>program</key>
+    <array>
+        <string>Swift</string>
+        <string>SwiftUI</string>
+        <string>Navigation</string>
+        <string>CoreData</string>
+        <string>Networking</string>
+        <string>Animations</string>
+        <string>Testing</string>
+        <string>GitHub</string>
+        <string>MapKit</string>
+        <string>Release</string>
+    </array>
+</dict>
+
+<dict>
+    <key>title</key>
+    <string>UI UX Design</string>
+
+    <key>image</key>
+    <string>paintpalette</string>
+
+    <key>teacher</key>
+    <string>Anna Lee</string>
+
+    <key>description</key>
+    <string>Learn modern mobile design.</string>
+
+    <key>program</key>
+    <array>
+        <string>Figma</string>
+        <string>Typography</string>
+        <string>Colors</string>
+        <string>UX</string>
+        <string>Layouts</string>
+        <string>Prototype</string>
+        <string>Animations</string>
+        <string>iOS Design</string>
+        <string>Components</string>
+        <string>Portfolio</string>
+    </array>
+</dict>
+
+</array>
+</plist>

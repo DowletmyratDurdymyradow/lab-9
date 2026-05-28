@@ -1,0 +1,676 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB6FED042FC8CEDE00B419CC /* BusRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6FED032FC8CED800B419CC /* BusRoute.swift */; };
+		EB6FED062FC8CEFC00B419CC /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6FED052FC8CEF700B419CC /* MapViewModel.swift */; };
+		EB6FED082FC8CF1800B419CC /* BusMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6FED072FC8CF1200B419CC /* BusMapView.swift */; };
+		EB6FED0B2FC8D37200B419CC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EB6FED092FC8D37200B419CC /* Localizable.strings */; };
+		EB9EBC782FC8C9A000E5BB5F /* CoursesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9EBC762FC8C89700E5BB5F /* CoursesView.swift */; };
+		EB9EBC792FC8C9FD00E5BB5F /* Courses.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB9EBC732FC8C80400E5BB5F /* Courses.plist */; };
+		EB9EBC7A2FC8CA0200E5BB5F /* CourseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9EBC742FC8C85E00E5BB5F /* CourseService.swift */; };
+		EB9EBC7B2FC8CA0800E5BB5F /* CourseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9EBC752FC8C87C00E5BB5F /* CourseViewModel.swift */; };
+		EB9EBC7C2FC8CA0C00E5BB5F /* CourseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9EBC772FC8C8BF00E5BB5F /* CourseDetailView.swift */; };
+		EB9EBC7D2FC8CA1200E5BB5F /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9EBC722FC8C7EB00E5BB5F /* Course.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB9EBC512FC8C6D300E5BB5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB9EBC3B2FC8C6D200E5BB5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB9EBC422FC8C6D200E5BB5F;
+			remoteInfo = OnlineCoursesBusBooking;
+		};
+		EB9EBC5B2FC8C6D300E5BB5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB9EBC3B2FC8C6D200E5BB5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB9EBC422FC8C6D200E5BB5F;
+			remoteInfo = OnlineCoursesBusBooking;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EB6FED032FC8CED800B419CC /* BusRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusRoute.swift; sourceTree = "<group>"; };
+		EB6FED052FC8CEF700B419CC /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		EB6FED072FC8CF1200B419CC /* BusMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusMapView.swift; sourceTree = "<group>"; };
+		EB6FED0A2FC8D37200B419CC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EB6FED0C2FC8D57B00B419CC /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EB9EBC432FC8C6D200E5BB5F /* OnlineCoursesBusBooking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineCoursesBusBooking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB9EBC502FC8C6D300E5BB5F /* OnlineCoursesBusBookingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnlineCoursesBusBookingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB9EBC5A2FC8C6D300E5BB5F /* OnlineCoursesBusBookingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnlineCoursesBusBookingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB9EBC722FC8C7EB00E5BB5F /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		EB9EBC732FC8C80400E5BB5F /* Courses.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Courses.plist; sourceTree = "<group>"; };
+		EB9EBC742FC8C85E00E5BB5F /* CourseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseService.swift; sourceTree = "<group>"; };
+		EB9EBC752FC8C87C00E5BB5F /* CourseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseViewModel.swift; sourceTree = "<group>"; };
+		EB9EBC762FC8C89700E5BB5F /* CoursesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesView.swift; sourceTree = "<group>"; };
+		EB9EBC772FC8C8BF00E5BB5F /* CourseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		EB9EBC452FC8C6D200E5BB5F /* OnlineCoursesBusBooking */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = OnlineCoursesBusBooking;
+			sourceTree = "<group>";
+		};
+		EB9EBC532FC8C6D300E5BB5F /* OnlineCoursesBusBookingTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = OnlineCoursesBusBookingTests;
+			sourceTree = "<group>";
+		};
+		EB9EBC5D2FC8C6D300E5BB5F /* OnlineCoursesBusBookingUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = OnlineCoursesBusBookingUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB9EBC402FC8C6D200E5BB5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB9EBC4D2FC8C6D300E5BB5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB9EBC572FC8C6D300E5BB5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB9EBC3A2FC8C6D200E5BB5F = {
+			isa = PBXGroup;
+			children = (
+				EB6FED092FC8D37200B419CC /* Localizable.strings */,
+				EB9EBC712FC8C76500E5BB5F /* Resources */,
+				EB9EBC702FC8C75B00E5BB5F /* Services */,
+				EB9EBC6F2FC8C75100E5BB5F /* ViewModels */,
+				EB9EBC6E2FC8C74300E5BB5F /* Views */,
+				EB9EBC6D2FC8C73600E5BB5F /* Models */,
+				EB9EBC452FC8C6D200E5BB5F /* OnlineCoursesBusBooking */,
+				EB9EBC532FC8C6D300E5BB5F /* OnlineCoursesBusBookingTests */,
+				EB9EBC5D2FC8C6D300E5BB5F /* OnlineCoursesBusBookingUITests */,
+				EB9EBC442FC8C6D200E5BB5F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EB9EBC442FC8C6D200E5BB5F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB9EBC432FC8C6D200E5BB5F /* OnlineCoursesBusBooking.app */,
+				EB9EBC502FC8C6D300E5BB5F /* OnlineCoursesBusBookingTests.xctest */,
+				EB9EBC5A2FC8C6D300E5BB5F /* OnlineCoursesBusBookingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB9EBC6D2FC8C73600E5BB5F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EB6FED032FC8CED800B419CC /* BusRoute.swift */,
+				EB9EBC722FC8C7EB00E5BB5F /* Course.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EB9EBC6E2FC8C74300E5BB5F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EB6FED072FC8CF1200B419CC /* BusMapView.swift */,
+				EB9EBC772FC8C8BF00E5BB5F /* CourseDetailView.swift */,
+				EB9EBC762FC8C89700E5BB5F /* CoursesView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EB9EBC6F2FC8C75100E5BB5F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				EB6FED052FC8CEF700B419CC /* MapViewModel.swift */,
+				EB9EBC752FC8C87C00E5BB5F /* CourseViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		EB9EBC702FC8C75B00E5BB5F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EB9EBC742FC8C85E00E5BB5F /* CourseService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EB9EBC712FC8C76500E5BB5F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EB9EBC732FC8C80400E5BB5F /* Courses.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB9EBC422FC8C6D200E5BB5F /* OnlineCoursesBusBooking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB9EBC642FC8C6D300E5BB5F /* Build configuration list for PBXNativeTarget "OnlineCoursesBusBooking" */;
+			buildPhases = (
+				EB9EBC3F2FC8C6D200E5BB5F /* Sources */,
+				EB9EBC402FC8C6D200E5BB5F /* Frameworks */,
+				EB9EBC412FC8C6D200E5BB5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				EB9EBC452FC8C6D200E5BB5F /* OnlineCoursesBusBooking */,
+			);
+			name = OnlineCoursesBusBooking;
+			packageProductDependencies = (
+			);
+			productName = OnlineCoursesBusBooking;
+			productReference = EB9EBC432FC8C6D200E5BB5F /* OnlineCoursesBusBooking.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EB9EBC4F2FC8C6D300E5BB5F /* OnlineCoursesBusBookingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB9EBC672FC8C6D300E5BB5F /* Build configuration list for PBXNativeTarget "OnlineCoursesBusBookingTests" */;
+			buildPhases = (
+				EB9EBC4C2FC8C6D300E5BB5F /* Sources */,
+				EB9EBC4D2FC8C6D300E5BB5F /* Frameworks */,
+				EB9EBC4E2FC8C6D300E5BB5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB9EBC522FC8C6D300E5BB5F /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				EB9EBC532FC8C6D300E5BB5F /* OnlineCoursesBusBookingTests */,
+			);
+			name = OnlineCoursesBusBookingTests;
+			packageProductDependencies = (
+			);
+			productName = OnlineCoursesBusBookingTests;
+			productReference = EB9EBC502FC8C6D300E5BB5F /* OnlineCoursesBusBookingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EB9EBC592FC8C6D300E5BB5F /* OnlineCoursesBusBookingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB9EBC6A2FC8C6D300E5BB5F /* Build configuration list for PBXNativeTarget "OnlineCoursesBusBookingUITests" */;
+			buildPhases = (
+				EB9EBC562FC8C6D300E5BB5F /* Sources */,
+				EB9EBC572FC8C6D300E5BB5F /* Frameworks */,
+				EB9EBC582FC8C6D300E5BB5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB9EBC5C2FC8C6D300E5BB5F /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				EB9EBC5D2FC8C6D300E5BB5F /* OnlineCoursesBusBookingUITests */,
+			);
+			name = OnlineCoursesBusBookingUITests;
+			packageProductDependencies = (
+			);
+			productName = OnlineCoursesBusBookingUITests;
+			productReference = EB9EBC5A2FC8C6D300E5BB5F /* OnlineCoursesBusBookingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB9EBC3B2FC8C6D200E5BB5F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2640;
+				LastUpgradeCheck = 2640;
+				TargetAttributes = {
+					EB9EBC422FC8C6D200E5BB5F = {
+						CreatedOnToolsVersion = 26.4.1;
+					};
+					EB9EBC4F2FC8C6D300E5BB5F = {
+						CreatedOnToolsVersion = 26.4.1;
+						TestTargetID = EB9EBC422FC8C6D200E5BB5F;
+					};
+					EB9EBC592FC8C6D300E5BB5F = {
+						CreatedOnToolsVersion = 26.4.1;
+						TestTargetID = EB9EBC422FC8C6D200E5BB5F;
+					};
+				};
+			};
+			buildConfigurationList = EB9EBC3E2FC8C6D200E5BB5F /* Build configuration list for PBXProject "OnlineCoursesBusBooking" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ru,
+			);
+			mainGroup = EB9EBC3A2FC8C6D200E5BB5F;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = EB9EBC442FC8C6D200E5BB5F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB9EBC422FC8C6D200E5BB5F /* OnlineCoursesBusBooking */,
+				EB9EBC4F2FC8C6D300E5BB5F /* OnlineCoursesBusBookingTests */,
+				EB9EBC592FC8C6D300E5BB5F /* OnlineCoursesBusBookingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB9EBC412FC8C6D200E5BB5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB6FED0B2FC8D37200B419CC /* Localizable.strings in Resources */,
+				EB9EBC792FC8C9FD00E5BB5F /* Courses.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB9EBC4E2FC8C6D300E5BB5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB9EBC582FC8C6D300E5BB5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB9EBC3F2FC8C6D200E5BB5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB9EBC7A2FC8CA0200E5BB5F /* CourseService.swift in Sources */,
+				EB9EBC7D2FC8CA1200E5BB5F /* Course.swift in Sources */,
+				EB6FED042FC8CEDE00B419CC /* BusRoute.swift in Sources */,
+				EB6FED082FC8CF1800B419CC /* BusMapView.swift in Sources */,
+				EB9EBC7B2FC8CA0800E5BB5F /* CourseViewModel.swift in Sources */,
+				EB9EBC7C2FC8CA0C00E5BB5F /* CourseDetailView.swift in Sources */,
+				EB9EBC782FC8C9A000E5BB5F /* CoursesView.swift in Sources */,
+				EB6FED062FC8CEFC00B419CC /* MapViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB9EBC4C2FC8C6D300E5BB5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB9EBC562FC8C6D300E5BB5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EB9EBC522FC8C6D300E5BB5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB9EBC422FC8C6D200E5BB5F /* OnlineCoursesBusBooking */;
+			targetProxy = EB9EBC512FC8C6D300E5BB5F /* PBXContainerItemProxy */;
+		};
+		EB9EBC5C2FC8C6D300E5BB5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB9EBC422FC8C6D200E5BB5F /* OnlineCoursesBusBooking */;
+			targetProxy = EB9EBC5B2FC8C6D300E5BB5F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EB6FED092FC8D37200B419CC /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB6FED0A2FC8D37200B419CC /* en */,
+				EB6FED0C2FC8D57B00B419CC /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB9EBC622FC8C6D300E5BB5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EB9EBC632FC8C6D300E5BB5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB9EBC652FC8C6D300E5BB5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Need location for routes";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Dowlet.OnlineCoursesBusBooking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EB9EBC662FC8C6D300E5BB5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Need location for routes";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Dowlet.OnlineCoursesBusBooking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EB9EBC682FC8C6D300E5BB5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Dowlet.OnlineCoursesBusBookingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OnlineCoursesBusBooking.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OnlineCoursesBusBooking";
+			};
+			name = Debug;
+		};
+		EB9EBC692FC8C6D300E5BB5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Dowlet.OnlineCoursesBusBookingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OnlineCoursesBusBooking.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OnlineCoursesBusBooking";
+			};
+			name = Release;
+		};
+		EB9EBC6B2FC8C6D300E5BB5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Dowlet.OnlineCoursesBusBookingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OnlineCoursesBusBooking;
+			};
+			name = Debug;
+		};
+		EB9EBC6C2FC8C6D300E5BB5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Dowlet.OnlineCoursesBusBookingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OnlineCoursesBusBooking;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB9EBC3E2FC8C6D200E5BB5F /* Build configuration list for PBXProject "OnlineCoursesBusBooking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB9EBC622FC8C6D300E5BB5F /* Debug */,
+				EB9EBC632FC8C6D300E5BB5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB9EBC642FC8C6D300E5BB5F /* Build configuration list for PBXNativeTarget "OnlineCoursesBusBooking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB9EBC652FC8C6D300E5BB5F /* Debug */,
+				EB9EBC662FC8C6D300E5BB5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB9EBC672FC8C6D300E5BB5F /* Build configuration list for PBXNativeTarget "OnlineCoursesBusBookingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB9EBC682FC8C6D300E5BB5F /* Debug */,
+				EB9EBC692FC8C6D300E5BB5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB9EBC6A2FC8C6D300E5BB5F /* Build configuration list for PBXNativeTarget "OnlineCoursesBusBookingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB9EBC6B2FC8C6D300E5BB5F /* Debug */,
+				EB9EBC6C2FC8C6D300E5BB5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB9EBC3B2FC8C6D200E5BB5F /* Project object */;
+}
