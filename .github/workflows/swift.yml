@@ -3,12 +3,9 @@ name: iOS Build
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
 
 jobs:
   build:
-
     runs-on: macos-latest
 
     steps:
@@ -19,5 +16,5 @@ jobs:
           xcodebuild \
           -project OnlineCoursesBusBooking.xcodeproj \
           -scheme OnlineCoursesBusBooking \
-          -destination 'platform=iOS Simulator,name=iPhone 16' \
+          -sdk iphonesimulator \
           build
